@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="JCE Emmanuel — Débat en ligne, Google Meet et discussion libre.">
+<title>JCE Live | JCE Emmanuel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container header-inner">
+<a href="index.html" class="brand"><span class="brand-mark"><i class="fa-solid fa-dove"></i></span><span class="brand-text"><strong>JCE EMMANUEL</strong><small>Jeunesse Chrétienne</small></span></a>
+<button class="menu-toggle" id="menuToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+<nav class="main-nav" id="mainNav">
+<a href="index.html">Accueil</a><a href="apropos.html">À propos</a><a href="programmes.html">Programmes</a><a href="evenements.html">Événements</a><a href="equipe.html">Équipe</a><a href="galerie.html">Galerie</a><a href="live.html" class="active">JCE Live</a><a href="ressources.html">Ressources</a><a href="contact.html" class="nav-cta">Nous contacter</a>
+</nav></div></header>
+
+<main>
+<section class="page-hero live-page-hero"><div class="container">
+<span class="eyebrow">Espace JCE Live</span>
+<h1>Connectés pour <span>échanger</span>, <em>apprendre</em> et grandir.</h1>
+<p>Un espace numérique pour participer aux débats, rejoindre les réunions en direct et discuter librement avec la communauté JCE.</p>
+<div class="live-hero-badges"><span><i class="fa-solid fa-circle"></i> Espace communautaire</span><span><i class="fa-solid fa-video"></i> Direct</span><span><i class="fa-solid fa-comments"></i> Chat</span></div>
+</div></section>
+
+<section class="section live-spaces-section"><div class="container">
+<div class="section-header"><span class="eyebrow">Les espaces JCE Live</span><h2>Trois façons de <span>rester connecté</span></h2><p>Choisis l'espace qui correspond à ton besoin et participe à la vie de la jeunesse chrétienne.</p></div>
+<div class="live-spaces-grid">
+
+<article class="live-space-card">
+<div class="live-card-top"><div class="live-space-icon"><i class="fa-solid fa-microphone-lines"></i></div><span class="live-label"><i class="fa-solid fa-circle"></i> EN LIGNE</span></div>
+<div class="live-card-image"><div class="live-image-placeholder debate-image"><i class="fa-solid fa-users-viewfinder"></i></div></div>
+<div class="live-card-content"><span class="live-card-kicker">Espace d'échange</span><h3>Débat en ligne</h3><p>Des discussions autour de thèmes qui concernent la foi, la jeunesse, la société et notre vie quotidienne.</p>
+<div class="live-info-list"><span><i class="fa-regular fa-calendar"></i> Débats programmés</span><span><i class="fa-solid fa-users"></i> Participants JCE</span><span><i class="fa-solid fa-comments"></i> Questions & échanges</span></div>
+<button class="btn btn-blue live-open-btn" data-space="debate"><i class="fa-solid fa-arrow-right"></i> Participer au débat</button></div></article>
+
+<article class="live-space-card">
+<div class="live-card-top"><div class="live-space-icon yellow"><i class="fa-solid fa-video"></i></div><span class="live-label yellow-label"><i class="fa-solid fa-calendar-check"></i> RÉUNION</span></div>
+<div class="live-card-image"><div class="live-image-placeholder meet-image"><i class="fa-solid fa-video"></i><span>GOOGLE MEET</span></div></div>
+<div class="live-card-content"><span class="live-card-kicker">Réunion à distance</span><h3>Réunion en direct sur Google Meet</h3><p>Rejoins une réunion JCE depuis ton téléphone ou ton ordinateur grâce à un lien Google Meet.</p>
+<div class="meet-next"><div><small>PROCHAINE RÉUNION</small><strong id="nextMeetingTitle">Réunion JCE Emmanuel</strong></div><span id="nextMeetingStatus">Programmée</span></div>
+<div class="live-info-list"><span><i class="fa-regular fa-clock"></i> Date et heure affichées</span><span><i class="fa-solid fa-link"></i> Lien de réunion</span><span><i class="fa-solid fa-mobile-screen"></i> Téléphone & ordinateur</span></div>
+<button class="btn btn-yellow live-open-btn" data-space="meet"><i class="fa-solid fa-video"></i> Rejoindre la réunion</button></div></article>
+
+<article class="live-space-card">
+<div class="live-card-top"><div class="live-space-icon dark"><i class="fa-solid fa-comments"></i></div><span class="live-label dark-label"><i class="fa-solid fa-message"></i> CHAT</span></div>
+<div class="chat-preview"><div class="chat-preview-header"><div class="chat-brand"><span class="mini-logo"><i class="fa-solid fa-dove"></i></span><div><strong>Discussion libre</strong><small><i class="fa-solid fa-circle"></i> Communauté JCE</small></div></div><i class="fa-solid fa-ellipsis"></i></div>
+<div class="chat-message"><span class="avatar avatar-blue">J</span><div><small>Jonathan</small><p>Bienvenue dans l'espace de discussion JCE !</p></div></div>
+<div class="chat-message own"><div><small>Vous</small><p>Bonjour à toute la communauté 👋</p></div><span class="avatar avatar-yellow">V</span></div>
+<div class="chat-message"><span class="avatar avatar-dark">M</span><div><small>Marie</small><p>On se retrouve pour le prochain débat ?</p></div></div></div>
+<div class="live-card-content"><span class="live-card-kicker">Communauté</span><h3>Discussion libre — Chat</h3><p>Échange librement avec les membres de la communauté JCE, pose tes questions et partage tes idées.</p>
+<div class="live-info-list"><span><i class="fa-solid fa-user-group"></i> Membres de la communauté</span><span><i class="fa-solid fa-bolt"></i> Messages instantanés</span><span><i class="fa-solid fa-shield-halved"></i> Espace modéré</span></div>
+<button class="btn btn-dark live-open-btn" data-space="chat"><i class="fa-solid fa-comments"></i> Ouvrir le chat</button></div></article>
+
+</div></div></section>
+
+<section class="section live-broadcast-section"><div class="container"><div class="live-banner"><div class="live-background"></div>
+<div class="live-content"><span class="live-status"><span></span> JCE LIVE</span><h2>Diffusion <em>en direct</em></h2><p>Cet espace est préparé pour accueillir les futures diffusions YouTube Live et Facebook Live de JCE Emmanuel.</p>
+<div class="live-platforms"><button class="platform-btn" data-platform="youtube"><i class="fa-brands fa-youtube"></i> YouTube Live</button><button class="platform-btn" data-platform="facebook"><i class="fa-brands fa-facebook"></i> Facebook Live</button></div></div>
+<div class="live-screen" id="liveScreen"><div class="live-play"><i class="fa-solid fa-play"></i></div><strong>Aucune diffusion en cours</strong><span>Le lecteur apparaîtra ici pendant un direct.</span></div>
+</div></div></section>
+
+<section class="section upcoming-live-section"><div class="container"><div class="section-header"><span class="eyebrow">Agenda JCE Live</span><h2>Prochains <span>rendez-vous</span></h2><p>Les prochaines activités disponibles en ligne.</p></div><div class="upcoming-live-grid" id="upcomingLiveGrid"></div></div></section>
+
+<section class="section how-live-section"><div class="container"><div class="section-header"><span class="eyebrow">Simple et accessible</span><h2>Comment participer ?</h2></div><div class="how-live-grid">
+<div class="how-live-item"><span>01</span><i class="fa-solid fa-calendar-days"></i><h3>Choisis ton activité</h3><p>Débat, réunion ou discussion libre.</p></div>
+<div class="how-live-item"><span>02</span><i class="fa-solid fa-arrow-pointer"></i><h3>Clique sur participer</h3><p>Le site t'oriente vers l'espace correspondant.</p></div>
+<div class="how-live-item"><span>03</span><i class="fa-solid fa-people-group"></i><h3>Rejoins la communauté</h3><p>Échange, apprends et participe activement.</p></div>
+</div></div></section>
+</main>
+
+<footer class="site-footer"><div class="container"><div class="footer-grid">
+<div class="footer-brand"><div class="brand"><span class="brand-mark"><i class="fa-solid fa-dove"></i></span><span class="brand-text"><strong>JCE EMMANUEL</strong><small>Jeunesse Chrétienne</small></span></div><p>Une jeunesse engagée dans la foi, la communion, le service et la transformation de la société.</p><div class="social-links"><a href="#"><i class="fa-brands fa-facebook-f"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a><a href="#"><i class="fa-brands fa-whatsapp"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div></div>
+<div class="footer-column"><h4>Navigation</h4><a href="index.html">Accueil</a><a href="apropos.html">À propos</a><a href="programmes.html">Programmes</a><a href="evenements.html">Événements</a></div>
+<div class="footer-column"><h4>JCE Live</h4><a href="live.html">Débat en ligne</a><a href="live.html">Google Meet</a><a href="live.html">Discussion libre</a><a href="live.html">Diffusion en direct</a></div>
+<div class="footer-column"><h4>Contact</h4><a href="contact.html">Nous contacter</a><a href="contact.html">Nous rejoindre</a><a href="ressources.html">Ressources</a></div>
+</div><div class="footer-bottom"><span>© 2026 JCE Emmanuel — Tous droits réservés.</span><span>Foi • Communion • Service</span></div></div></footer>
+
+<div class="live-modal" id="liveModal" aria-hidden="true"><div class="live-modal-overlay" id="liveModalOverlay"></div><div class="live-modal-box"><button class="live-modal-close" id="liveModalClose"><i class="fa-solid fa-xmark"></i></button><div id="liveModalContent"></div></div></div>
+
+<script src="js/main.js"></script><script src="js/live.js"></script>
+</body></html>
